@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+ADMIN LOGIN
+</title>
+</head>
+<body>
+
+<form>
+<pre>
+                                                                        <h1 style="text-align:center;">ADMIN LOGIN</h1>
+                                              <h3 style="text-align:center;">USERNAME<br>
+<input type="text" name="username"><br>
+                                              <h3 style="text-align:center;">PASSWORD<br>
+<input type="password" name="password"><br>
+
+                              <input type="button" onclick="check(this.form)" value="login">       <input type="button"  value="cancel">   
+</pre>
+<script language="javascript">
+function check(form)
+{
+	//function to check username and password
+	if(form.username.value=="admin" && form.password.value=="admin")
+	{
+		window.open('adminwelcome.html')
+	}
+	else
+	{
+		alert("error password or username")
+	}
+
+}
+</script>
+</body>
+</html>
